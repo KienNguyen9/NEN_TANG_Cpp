@@ -66,7 +66,9 @@
   
   ```
 </details>
+
 [comment]: <> (This is a comment, it will not be included)
+
 <details>
   <summary>
     <h2>3.2 Phép gán - assignment operator</h2>
