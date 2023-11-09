@@ -2,7 +2,7 @@
 ![Alt text](image.png)
 
 
-# ▶ 2. Biến và kiểu dữ liệu - Variable and Datatype
+## ▶ 2. Biến và kiểu dữ liệu - Variable and Datatype
 <details>
   <summary>
     <h2>2.1 Khái niệm biến và kiểu dữ liệu - Variable and Data type Explained </h2>
@@ -19,7 +19,7 @@
 </details>
 
 
-# ▶ 3. Toán tử, toán hạng, biểu thức - Operator, operand, expession
+## ▶ 3. Toán tử, toán hạng, biểu thức - Operator, operand, expession
 <details>
   <summary>
     <h2>3.1 Khái niệm toán tử</h2>
@@ -73,4 +73,4 @@
       
 </details>
 
-# 4. ABC
+# ▶4. ABC
