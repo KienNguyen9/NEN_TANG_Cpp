@@ -1,6 +1,10 @@
-# Nền tảng lập trình - Ngôn ngữ C++
+Nền tảng lập trình - Ngôn ngữ C++
 ![Alt text](image.png)
-# ▶ 2 - Biến và kiểu dữ liệu - Variable and Datatype
+
+<summary>
+  <h1>▶ 2 - Biến và kiểu dữ liệu - Variable and Datatype</h1>
+</sumarry>
+
 <details>
   <summary>
     <h2>2.1 Khái niệm biến và kiểu dữ liệu - Variable and Data type Explained </h2>
