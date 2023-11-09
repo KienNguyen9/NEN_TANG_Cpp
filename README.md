@@ -1,4 +1,5 @@
 # Nền tảng lập trình - Ngôn ngữ C++
+ `cpp`  
 <summary>
   <h1>2. Biến và kiểu dữ liệu - Variable and Datatype </h2>
 </summary>
@@ -17,7 +18,7 @@
   <h3>Data type exlained:</h3>
   - abc
 </details>
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 <summary>
   <h1>3. Toán tử, toán hạng, biểu thức</h1>
 </summary>
