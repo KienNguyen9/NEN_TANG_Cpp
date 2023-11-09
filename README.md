@@ -42,7 +42,7 @@
   <summary>
     <h2>3.2 Phép toán ép kiểu</h2>
   </summary>
-  - abc
+  - abc.
   
   - def
   
