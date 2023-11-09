@@ -1,10 +1,8 @@
-Nền tảng lập trình - Ngôn ngữ C++
+# Nền tảng lập trình - Ngôn ngữ C++
 ![Alt text](image.png)
 
-<summary>
-  <h1>▶ 2 - Biến và kiểu dữ liệu - Variable and Datatype</h1>
-</sumarry>
 
+# ▶ 2. Biến và kiểu dữ liệu - Variable and Datatype
 <details>
   <summary>
     <h2>2.1 Khái niệm biến và kiểu dữ liệu - Variable and Data type Explained </h2>
@@ -20,15 +18,14 @@ Nền tảng lập trình - Ngôn ngữ C++
   - abc
 </details>
 
-<summary>
-<h1>▶ 3 - Toán tử, toán hạng, biểu thức</h1>
-</summary>
+
+# ▶ 3. Toán tử, toán hạng, biểu thức - Operator, operand, expession
 <details>
   <summary>
     <h2>3.1 Khái niệm toán tử</h2>
   </summary>
-  <h3>Nội dung chính:</h3>
-  
+
+  <h3>Nội dung chính:</h3>  
   Ta có Variable là sự biến đổi giá trị của các biến.
   
   Nó thông qua các phép toán(+,-,*,/,...): được gọi là Operator(toán tử).
@@ -68,7 +65,6 @@ Nền tảng lập trình - Ngôn ngữ C++
   ```
 </details>
 
-[comment]: <> (This is a comment, it will not be included)
 
 <details>
   <summary>
@@ -76,6 +72,5 @@ Nền tảng lập trình - Ngôn ngữ C++
   </summary>
       
 </details>
--------------------------------------------------------------------------
-abc
--------------------------------------------------------------------------
+
+# 4. ABC
