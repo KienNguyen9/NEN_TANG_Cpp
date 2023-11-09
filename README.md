@@ -2,29 +2,33 @@
 <summary>
   <h1>2. Biến và kiểu dữ liệu - Variable and Datatype </h2>
 </summary>
+
 <details>
-  <summary>
-    <h2>2.1 Khái niệm biến và kiểu dữ liệu - Variable and Data type Explained </h2>
-  </summary>
-  <h3>Biến là:</h3>
+  
+  ## 2.1 Khái niệm biến và kiểu dữ liệu - Variable and Data type Explained  
+
+  ### Biến là:
   - Đối tượng chiếm một vùng nhớ xác định
   - Dùng để lưu trữ giá trị nào đó
-  <h3>Variable Explained:</h3>
+  ### Variable Explained:
   - abc
-  <h3>Kiểu dữ liệu là:</h3>
+
+  ### Kiểu dữ liệu là:
   - Tập hợp của các loại giá trị mà có thể khởi tạo cho một biến 
-  <h3>Data type exlained:</h3>
+  ### Data type exlained:
   - abc
+
 </details>
 
 <summary>
   <h1>3. Toán tử, toán hạng, biểu thức</h1>
 </summary>
+
 <details>
-  <summary>
-    <h2>3.1 Khái niệm toán tử</h2>
-  </summary>
-  <h3>Nội dung chính:</h3>
+  
+  ## 3.1 Khái niệm toán tử
+  
+  ### Nội dung chính:
   
   Ta có Variable là sự biến đổi giá trị của các biến.
   
@@ -35,6 +39,7 @@
   Chúng cần có các Variable hoặc các con số đứng cùng, được gọi là Operand(toán hạng).
   
   Lúc này chúng đứng cùng nhau(Operator, Operand) ta có được Expression(biểu thức).
+  
   ```c++
   #include <iostream>
   int main()
@@ -59,7 +64,7 @@
   - Ví dụ với phép "+" sẽ làm việc với toán hạng bên tay phải trước
 
   ```C++
-  // 3*4 sẽ được thực hiện trước, sau đó 1*2 được thực hiện và cuối cùng là 2 toán hạng cộng lại => (3*4) + (1*2)
+  // 3*4 sẽ được thực hiện trước, sau đó 1*2 được thực hiện và cuối cùng là 2 toán hạng cộng lại theo trình tự sau: (3*4) -> (1*2) -> 2 + 12
   cout << 1*2 + 3*4;  
   ```
 </details>
