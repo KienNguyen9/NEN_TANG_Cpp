@@ -6,9 +6,9 @@
     <sumary><h3>Biến là:</h3></sumary>
     - Đối tượng chiếm một vùng nhớ xác định
     - Dùng để lưu trữ giá trị nào đó 
-    ## Variable Explained:
-    ## Kiểu dữ liệu là:
+    <summary><h4>Variable Explained:</h4></summary>
+    <summary><h3>Kiểu dữ liệu là:</h3></summary>
     - Tập hợp của các loại giá trị mà có thể khởi tạo cho một biến 
-    ## Data type exlained:
+    <summary><h3>Data type exlained:</h3></summary>
   </details>
 </details>
