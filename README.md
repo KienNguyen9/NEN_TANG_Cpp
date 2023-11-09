@@ -5,14 +5,12 @@
   <summary><h2>1.1 Khái niệm biến và kiểu dữ liệu - Variable and Data type Explained </h2></summary>
     <sumary><h3>Biến là:</h3></sumary>
     - Đối tượng chiếm một vùng nhớ xác định
-    - Dùng để lưu trữ giá trị nào đó
-    
+    - Dùng để lưu trữ giá trị nào đó    
     <summary><h3>Variable Explained:</h4></summary>
-    
+    - abc
     <summary><h3>Kiểu dữ liệu là:</h3></summary>
     - Tập hợp của các loại giá trị mà có thể khởi tạo cho một biến 
-    
     <summary><h3>Data type exlained:</h3></summary>
-    
+    - abc
   </details>
 </details>
