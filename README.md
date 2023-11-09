@@ -1,7 +1,7 @@
 # Nền tảng lập trình - Ngôn ngữ C++
 ![Alt text](image.png)
 <summary>
-  <h1>2. Biến và kiểu dữ liệu - Variable and Datatype </h2>
+  <h1> 2. Biến và kiểu dữ liệu - Variable and Datatype </h2>
 </summary>
 
 <details>
