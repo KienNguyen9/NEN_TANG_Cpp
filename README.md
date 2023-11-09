@@ -31,3 +31,12 @@
   - Chúng cần có các Variable hoặc các con số đứng cùng, được gọi là Operand(toán hạng)
   - Lúc này chúng đứng cùng nhau(Operator, Operand) ta có được Expression(biểu thức)
 </details>
+
+<details>
+  <summary>
+    <h2>3.2 Phép toán ép kiểu</h2>
+  </summary>
+  - abc
+  - def
+  
+</details>
