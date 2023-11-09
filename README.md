@@ -25,10 +25,14 @@
     <h2>3.1 Khái niệm toán tử</h2>
   </summary>
   <h3>Nội dung chính:</h3>
-  Ta có Variable là sự biến đổi giá trị của các biến./n
+  Ta có Variable là sự biến đổi giá trị của các biến.
+  
   Nó thông qua các phép toán(+,-,*,/,...): được gọi là Operator(toán tử).
+  
   Nếu các Operator đứng đơn lẻ thì không có ý nghĩa gì cả.
+  
   Chúng cần có các Variable hoặc các con số đứng cùng, được gọi là Operand(toán hạng).
+  
   Lúc này chúng đứng cùng nhau(Operator, Operand) ta có được Expression(biểu thức).
 </details>
 
