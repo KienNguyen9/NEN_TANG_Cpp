@@ -1,5 +1,5 @@
 # Nền tảng lập trình - Ngôn ngữ C++
- `cpp`  
+ `cpp`   <img src="./icons/CPP.svg" width="48"> 
 <summary>
   <h1>2. Biến và kiểu dữ liệu - Variable and Datatype </h2>
 </summary>
