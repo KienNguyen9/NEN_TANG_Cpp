@@ -82,18 +82,20 @@
   - Thứ tự ưu tiên của phép gán sau các phép toán(+,-,*,/,...).
   - Gáng giá trị bên phải sang biến bên trái.
 
-  ```C++
+  ```C
   int x; // Khai báo
   x = 10; // Khởi tạo giá trị - gán giá trị 10 cho x
   int y = 2; // Khaoi báo và khởi tạo 
   ```
+
   Biến constant: chỉ được gán 1 lần duy nhất 
   Cú pháp:
 
-  ```C++
+  ```C
   const int z = 100;
   ```
-  ```C++
+
+  ```C
   int a = 1;
   int b = 2;
   // lưu ý : (a = b = 5) là một biểu thức expression - nên tương tự như biểu thức bình thường, ko phải hàm gì cả
@@ -105,6 +107,7 @@
   5
   */
   ```
+
 </details>
 
 
