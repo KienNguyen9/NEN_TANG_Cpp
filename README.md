@@ -26,15 +26,13 @@
   </summary>
 
   <h3>Nội dung chính:</h3>  
-  Ta có Variable là sự biến đổi giá trị của các biến.
-  
-  Nó thông qua các phép toán(+,-,*,/,...): được gọi là Operator(toán tử).
-  
-  Nếu các Operator đứng đơn lẻ thì không có ý nghĩa gì cả.
-  
-  Chúng cần có các Variable hoặc các con số đứng cùng, được gọi là Operand(toán hạng).
-  
-  Lúc này chúng đứng cùng nhau(Operator, Operand) ta có được Expression(biểu thức).
+
+  - Ta có Variable là sự biến đổi giá trị của các biến.
+  - Nó thông qua các phép toán(+,-,*,/,...): được gọi là Operator(toán tử).
+  - Nếu các Operator đứng đơn lẻ thì không có ý nghĩa gì cả.
+  - Chúng cần có các Variable hoặc các con số đứng cùng, được gọi là Operand(toán hạng).
+  - Lúc này chúng đứng cùng nhau(Operator, Operand) ta có được Expression(biểu thức).
+
   ```c++
   #include <iostream>
   int main()
@@ -51,9 +49,11 @@
   cout << sizeof(int_variable) // 4 byet 
   ```
   <h3>Số toàn hạng tham gia vào phép toán đó</3>
-  - Có thể có 1 hoặc 2 toán hạng (operand) được dùng khi dùng 1 toán tử(operator)
+  - Có thể có 1 hoặc 2 toán hạng (operand) được dùng khi dùng 1 toán tử(operator).
+  
   <h3>Độ ưu tiên - Precedent</h3>
-  - Sẽ có thứ tự thực hiện giữa các toán tử 
+  - Sẽ có thứ tự thực hiện giữa các toán tử.
+
   <h3>Thứ tự thực hiện - Associativity</h3>
   - Từ trái sang phải hay từ phải sang trái
   - Ví dụ với phép "+" sẽ làm việc với toán hạng bên tay phải trước
@@ -77,7 +77,7 @@
   Biểu diễn: "=".
 
   <h3>Đặc điểm</h2>
-  
+
   - Gán 1 giá trị nào đó cho 1 biến.
   - Số toán hạng tham gia vào phép gán là: 2.
   - Thứ tự ưu tiên của phép gán sau các phép toán(+,-,*,/,...).
@@ -117,11 +117,101 @@
 </details>
 
 
+<details>
+  <summary>
+    <h2>3.3 Phép toán số học - Arithmetic operator</h2>
+  </summary>
+
+  <h3>Nội dung chính:</h3>
+  
+  - Các phép toán cơ bản trong toán học(+, -, *, /, %, ++, --) đều có trong lập trình.
+   
+  ```C++
+  #include <iostream>
+  int main()
+  {
+    // Phép cộng dùng toán tử "+"
+    int x = 5 + 6;
+    // Phép trừ dùng toán tử "-"
+    int y = x - 1; 
+    // Phép chia lấy phần nguyên dùng toán tử "/"
+    int z = x * 2; 
+    
+    /* 
+    * Trong lập trình thì phép chia là phép toán có nhiều hướng thực 
+    * hiện, Nên cần chú ý khi thực hiện phép chia.
+    */
+    // Phép chia lấy phần nguyên dừng toán tử "/" 
+    int i = 15 / 2; 
+    //  Phép chia lấy phần dư dừng toán tử "%"
+    int i = 15 % 2; // KQ: 1 
+
+    /*
+    * Vậy là sao để chia để nhận được kế quả số thực:
+    * - Viết biểu thức dưới dạng số thự (VD: 10.0, 3.3,..)
+    * - Biến nhận là kiểu số thực
+    */
+    float j = 15.0 / 2; 
+    // Lưu ý biến số thực KHÔNG CÓ chia lấy phần dư
+    // Không được chia cho số 0
+
+    // Phép toàn tự tăng và tự giảm /
+    // Kí hiệu: "a++" | "++a" | "a--"| "--a"| 
+    // Kí hiệu: "a += b" | "a -= b" | "a *= b" | "a /=b" 
+    int a = 0;
+    a++; // Sau khi câu lệnh kết thúc bằng dấu ";" thì biến a mới tăng 1 đơn vị. 
+    ++a; // Tăng ngay khi câu lệnh được thực hiện.
+    
+    /*
+    * Phép toàn ưu tiên
+    * Cú pháp: "( a + b ) * c"
+    */
+    int q = (1+2)*3;
+
+    return 0;
+  }
+  ```
+  <h3>Thư viện toán học</h3>
+
+  Thư viện toán học - math library. Có các hàm cơ bản sau:
+  Đây là phép toán được biểu diễn bằng chuỗi kí tự đã được nhắc ở các bài trước. Hay có thể gọi là hàm.
+
+  - Hàm căn bặc 2 - sqrt(a) stand for "square root" 
+  - Hàm mũ 2 - pow(a,b) stand for "power"
+  - Hàm trị tuyệt đối - abs(a) - stand for "absolute"
+  ```C++
+  #include <iostream>
+  #include <math.h> // Tại sao có chữ ".h"? Vì đây là thư viện của lập trình C 
+  #include <cmath> // hoặc có thể viết NTN
+
+  using namespace std;
+  int main()
+  {
+    int x = 9;
+    // In ra căn bậc 2
+    cout << sqrt(x);
+    // Đây là in ra x^4 . Dùng cho mũ lớn để giảm số lượng code.
+    cout << pow(x,4);
+    //In ra trị tuyệt đối  
+    cout << abs(x);
+    return 0;
+  }
+  
+  ```
+  <h3>Phép toàn cộng kí tự</h3>
+  
+  ```C++
+  char x = 'A'; // Lưu trong bộ nhớ MT là một số nguyên nằm trong mã Asci
+  cout << x; // KQ: 65
+  cout << (x+1); // KQ: 66
+  ```      
+</details>
+
 
 
 <details>
   <summary>
-    <h2>3.2 Phép gán - assignment operator</h2>
+    <h2>Name of lesson</h2>
   </summary>
       
 </details>
