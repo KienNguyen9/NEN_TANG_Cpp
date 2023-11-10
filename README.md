@@ -66,6 +66,50 @@
 </details>
 
 
+
+
+<details>
+  <summary>
+    <h2>3.2 Phép gán - assignment operator</h2>
+  </summary>
+  <h3>Nội dung chính:</h3>
+  Phép gán - assignment operator.
+  Biểu diễn: "=".
+
+  <h3>Đặc điểm</h>
+  - Gán 1 giá trị nào đó cho 1 biến.
+  - Số toán hạng tham gia vào phép gán là: 2.
+  - Thứ tự ưu tiên của phép gán sau các phép toán(+,-,*,/,...).
+  - Gáng giá trị bên phải sang biến bên trái.
+
+  ```C++
+  int x; // Khai báo
+  x = 10; // Khởi tạo giá trị - gán giá trị 10 cho x
+  int y = 2; // Khaoi báo và khởi tạo 
+  ```
+  Biến constant: chỉ được gán 1 lần duy nhất 
+  Cú pháp:
+
+  ```C++
+  const int z = 100;
+  ```
+  ```C++
+  int a = 1;
+  int b = 2;
+  // lưu ý : (a = b = 5) là một biểu thức expression - nên tương tự như biểu thức bình thường, ko phải hàm gì cả
+  cout << (a = b = 5) << '\n'; 
+  cout << x << '\n' << y << '\n';
+  /*Kết quả là:
+  5
+  5
+  5
+  */
+  ```
+</details>
+
+
+
+
 <details>
   <summary>
     <h2>3.2 Phép gán - assignment operator</h2>
