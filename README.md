@@ -82,7 +82,7 @@
   - Thứ tự ưu tiên của phép gán sau các phép toán(+,-,*,/,...).
   - Gáng giá trị bên phải sang biến bên trái.
 
-  ```C++
+  ```c++
   #include <iostream>
   int main()
   {
@@ -91,17 +91,16 @@
     int y = 2; // Khaoi báo và khởi tạo 
     return 0;
   }
-  
   ```
 
   Biến constant: chỉ được gán 1 lần duy nhất 
   Cú pháp:
 
-  ```C
+  ```C++
   const int z = 100;
   ```
 
-  ```C
+  ```C++
   int a = 1;
   int b = 2;
   // lưu ý : (a = b = 5) là một biểu thức expression - nên tương tự như biểu thức bình thường, ko phải hàm gì cả
