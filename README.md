@@ -82,10 +82,16 @@
   - Thứ tự ưu tiên của phép gán sau các phép toán(+,-,*,/,...).
   - Gáng giá trị bên phải sang biến bên trái.
 
-  ```C
-  int x; // Khai báo
-  x = 10; // Khởi tạo giá trị - gán giá trị 10 cho x
-  int y = 2; // Khaoi báo và khởi tạo 
+  ```C++
+  #include <iostream>
+  int main()
+  {
+    int x; // Khai báo
+    x = 10; // Khởi tạo giá trị - gán giá trị 10 cho x
+    int y = 2; // Khaoi báo và khởi tạo 
+    return 0;
+  }
+  
   ```
 
   Biến constant: chỉ được gán 1 lần duy nhất 
