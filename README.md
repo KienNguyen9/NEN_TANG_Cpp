@@ -76,7 +76,7 @@
   Phép gán - assignment operator.
   Biểu diễn: "=".
 
-  <h3>Đặc điểm</h>
+  <h3>Đặc điểm</h2>
   - Gán 1 giá trị nào đó cho 1 biến.
   - Số toán hạng tham gia vào phép gán là: 2.
   - Thứ tự ưu tiên của phép gán sau các phép toán(+,-,*,/,...).
