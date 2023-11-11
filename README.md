@@ -263,13 +263,14 @@ int main()
 
 
 
-## ▶ 3. Toán tử, toán hạng, biểu thức - Operator, operand, expession
+## ▶ 3. Các phép toán với biến
+
 <details>
   <summary>
-    <h2>3.1 Khái niệm toán tử</h2>
+    <h3>3.1 Khái niệm toán tử và biểu thức - Operator and expression</h3>
   </summary>
 
-  <h3>Nội dung chính:</h3>  
+  <h4>Nội dung chính:</h4>  
 
   - Ta có Variable là sự biến đổi giá trị của các biến.
   - Nó thông qua các phép toán(+,-,*,/,...): được gọi là Operator(toán tử).
@@ -287,18 +288,18 @@ int main()
     return 0;
   }
   ```
-  <h3>Phép toán có thể biểu diễn bằng kí hiệu (+,-,*,/,...) hiệu hoặc "chuỗi kí tự" hiểu đơn giản là hàm</h3>
+  Phép toán có thể biểu diễn bằng kí hiệu (+,-,*,/,...) hiệu hoặc "chuỗi kí tự" hiểu đơn giản là hàm
 
   ```c++
   cout << sizeof(int_variable) // 4 byet 
   ```
-  <h3>Số toàn hạng tham gia vào phép toán đó</3>
+  Số toàn hạng tham gia vào phép toán đó:
   - Có thể có 1 hoặc 2 toán hạng (operand) được dùng khi dùng 1 toán tử(operator).
   
-  <h3>Độ ưu tiên - Precedent</h3>
+  Độ ưu tiên - Precedent:
   - Sẽ có thứ tự thực hiện giữa các toán tử.
 
-  <h3>Thứ tự thực hiện - Associativity</h3>
+  Thứ tự thực hiện - Associativity:
   - Từ trái sang phải hay từ phải sang trái
   - Ví dụ với phép "+" sẽ làm việc với toán hạng bên tay phải trước
 
@@ -314,14 +315,13 @@ int main()
 
 <details>
   <summary>
-    <h2>3.2 Phép gán - assignment operator</h2>
+    <h3>3.2 Phép gán - assignment operator</h3>
   </summary>
-  <h3>Nội dung chính:</h3>
+  <h4>Nội dung chính:</h4>
   Phép gán - assignment operator.
   Biểu diễn: "=".
 
-  <h3>Đặc điểm</h2>
-
+  Đặc điểm
   - Gán 1 giá trị nào đó cho 1 biến.
   - Số toán hạng tham gia vào phép gán là: 2.
   - Thứ tự ưu tiên của phép gán sau các phép toán(+,-,*,/,...).
@@ -363,10 +363,10 @@ int main()
 
 <details>
   <summary>
-    <h2>3.3 Phép toán số học - Arithmetic operator</h2>
+    <h3>3.3 Phép toán số học - Arithmetic operator</h3>
   </summary>
 
-  <h3>Nội dung chính:</h3>
+  <h4>Nội dung chính:</h4>
   
   - Các phép toán cơ bản trong toán học(+, -, *, /, %, ++, --) đều có trong lập trình.
    
@@ -415,7 +415,7 @@ int main()
     return 0;
   }
   ```
-  <h3>Thư viện toán học</h3>
+  <h4>Thư viện toán học</h4>
 
   Thư viện toán học - math library. Có các hàm cơ bản sau:
   Đây là phép toán được biểu diễn bằng chuỗi kí tự đã được nhắc ở các bài trước. Hay có thể gọi là hàm.
@@ -442,7 +442,7 @@ int main()
   }
   
   ```
-  <h3>Phép toàn cộng kí tự</h3>
+  <h4>Phép toàn cộng kí tự</h4>
   
   ```C++
   char x = 'A'; // Lưu trong bộ nhớ MT là một số nguyên nằm trong mã Asci
