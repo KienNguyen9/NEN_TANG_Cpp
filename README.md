@@ -263,7 +263,7 @@ int main()
 
 
 
-## :dollar: ▶ 3. Các phép toán với biến 
+## ▶ 3. Các phép toán với biến :dollar: 
 
 <details>
   <summary>
