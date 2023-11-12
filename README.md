@@ -491,8 +491,17 @@ int main()
   </summary>
   <h4>Nội dung chính:</h4>
 
-  - Kết quả của các phép toàn logical chỉ có "đúng" hoặc "sai". Tức là kết quả của biểu thức có kiểu ```bool```
-  
+  - Kết quả của các phép toàn logical chỉ có "đúng" hoặc "sai". Tức là kết quả của biểu thức có kiểu ```bool```.
+  - Các biến ```bool``` có thể: cộng, trừ, nhân, chia với nhau. Nhưng đừng làm như thế nếu bạn là lập trình viên chuyên nghiệp.
+  - Trong thực tế đây là các thao tác với các biến logical ```bool```: phép nhân(AND), phép cộng (OR), phép đảo (NOT). Kí hiệu: ```&& || !```
+
+  ```C++
+  // Cộng trừ nhân chia - theo kiểu người nhà quê 
+  bool a = 1, b = 0;
+  bool nhaQue = a*b; // Đúng không báo lỗi nhưng đừng làm thế 
+  ``` 
+
+
         
 </details>
 
