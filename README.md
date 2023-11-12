@@ -455,9 +455,55 @@ int main()
 
 <details>
   <summary>
-    <h2>Name of lesson</h2>
+    <h3>3.4 Phép toàn quan hệ - Relation oprerator</h3>
   </summary>
-      
+  <h4>Nội dụng chính:</h4>
+  
+  - Phép toàn quan hệ hay còn gọi là phép toán so sánh - Relation Operator
+  - Các kiểu so sánh có thể có là:
+    <, >, ==, <=, >=, !=
+  - Gía trị trả về của một biểu thức so sánh là một giá trị Bool (đúng - sai) 1 hoặc 0.
+
+Chương trình minh họa:
+```C++
+#include <iostream>
+using namespace std;
+int main()
+{
+
+  int x = 1;
+  // Đây là 1 biểu thức so sánh - kết quả: SAI, giá trị trả về là "0"
+  x < 1; 
+  // In ra màn hình giá trị trả về là "0"
+  cout << (x<1);
+  // Còn đây là biểu thức đúng và có giá trị trả về là "1"
+  cout << (x>0);
+  return 0;
+}
+```
 </details>
 
+
+
+<details>
+  <summary>
+    <h3>3.5 Phép toán Logic - Logical Operator</h3>
+  </summary>
+  <h4>Nội dung chính:</h4>
+
+  - Kết quả của các phép toàn logical chỉ có "đúng" hoặc "sai". Tức là kết quả của biểu thức có kiểu ```bool```
+  
+        
+</details>
+
+
+
+
+
+<details>
+  <summary>
+    <h3>Name of lesson</h3>
+  </summary>
+        
+</details>
 # ▶4. ABC
