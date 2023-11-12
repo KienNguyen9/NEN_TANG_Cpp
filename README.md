@@ -494,15 +494,35 @@ int main()
   - Kết quả của các phép toàn logical chỉ có "đúng" hoặc "sai". Tức là kết quả của biểu thức có kiểu ```bool```.
   - Các biến ```bool``` có thể: cộng, trừ, nhân, chia với nhau. Nhưng đừng làm như thế nếu bạn là lập trình viên chuyên nghiệp.
   - Trong thực tế đây là các thao tác với các biến logical ```bool```: phép nhân(AND), phép cộng (OR), phép đảo (NOT). Kí hiệu: ```&& || !```
+  - Thứ tự ưu tiên của các phép toàn Logical: 
+      1. ```!```
+      2. ```&&```
+      3. ```||```
+
+
 
   ```C++
   // Cộng trừ nhân chia - theo kiểu người nhà quê 
   bool a = 1, b = 0;
   bool nhaQue = a*b; // Đúng không báo lỗi nhưng đừng làm thế 
-  ``` 
 
-
-        
+  // Đây là ví dụng minh họa các phép toàn logical operator hoạt động ntn.
+  
+  #include <iostream>
+  using namespace std; 
+  int main()
+  {
+    bool a = true; // 1
+    bool b = true; // 1
+    // Phép toán AND - Phép và - là phép nhân số nhị phân, kí hiệu: &&
+    bool c = a&&b; // 1&&1 = 1*1 = 1 
+    // Phép toán OR - phép hoặc - là phép cộng hai số nhị phân, kí hiệu: ||
+    bool d = a||b; // 1||1 = 1+1 = 1 
+    // Phép toán NOT - phép toán đảo - là đảo giá trị của 1 số nhị phân, kí hiệu: !
+    bool e = !a; // !1 = 0
+    return 0;
+  }
+  ```         
 </details>
 
 
@@ -511,8 +531,64 @@ int main()
 
 <details>
   <summary>
-    <h3>Name of lesson</h3>
+    <h3>3.6 Ép kiểu -  Type casting operator</h3>
   </summary>
-        
+  <h4>Nội dung chính:</h4>
+  
+  - Ép kiểu là chuyển đổi kiểu dữ liệu.
+  - Đối với các kiểu dữ liệu nguyên thủy (primitive Variable): bool, char, int, float, double,...Thường thì không cần phải ép kiểu tường minh mà sẽ được C++ ép kiểu tự động.
+  - Các kiểu dữ liệu mở rộng: array, string, struct, class,...Không có  ép kiểu tự động, cần phải được DEV ép kiểu tường mình để tránh lỗi vì kiễu dữ liệu trên phức tạp
+  
+  Cú pháp ép kiểu tường minh:
+  ```C++
+  int a = 1998;
+  float b = (float)a;
+  ```
+
+  Chương trình minh họa chi tiết:
+  ```C++
+  #include <iostream>
+  #include <string>
+  using namespace std;
+  int main()
+  {
+    // CÁC KIỂU DỮ LIỆU NGUYÊN THỦY 
+    // float -> int
+    float x = 1.5;
+    cout << (int)x; // KQ = 1
+
+    int y = 1;
+    cout << (float)y; //KQ = 1.00000
+
+    int z = 65;
+    cout << (char)z; // in ra A
+
+    // char -> int
+    char j = 'A';
+    cout << (int)j; // in ra 65
+    // Ví dụ ép kiểu tự động 
+    float so_thuc = 1.5;
+    int bien_so_nguyen = so_thuc; // Vì gáng 1 số thực vào biến số nguyên
+    cout << bien_so_nguyen; // KQ = 1 đã tự động ép kiểu
+
+
+    // Đối với các kiểu dữ liệu mở rộng được ép kiểu bằng HÀM chuyên ép kiểu cho nó
+
+    string s = "123.456"; // chuỗi kí tự 123 ko phải số 123
+    // SAI - không phải kiểu dữ liệu nào cũng ép kiểu được
+    int q = (int)s; // SAI
+    // Nếu muốn ép kiểu cho câu lệnh trên thì cần tạo 1 hàm riêng để ép
+    
+    int q = stoi(s); // string to interger lấy tất cả các số đầu tiên đến khi gặp dấu . hoặc chữ này đó
+    int k = stof(s);
+
+    // Số ép thành chuỗi
+    int bien_so = 1998;
+    string bien_chuoi = to_string(bien_so); // bien_chuoi = "1998"
+
+  }
+
+  ```  
 </details>
+
 # ▶4. ABC
