@@ -117,8 +117,50 @@ Là các lệnh sẽ được thực hiện ít nhất một lần.
 
 <details>
     <summary>
-        <h3>Vòng lặp for - for loop statements</h3>
+        <h3>Cotinue và break</h3>
     </summary>
+    <h4>Hai phép lệnh continue và break điều khiển vòng lặp như thế nào: </h4>
+
+Chú ý: ```continue``` chỉ dùng với for, while và switch case.
+- Lệnh  ```continue``` cho phép bỏ qua tất cả các lệnh phía dưới để đi đến đầu vòng lặp tiếp theo.
+- Lệnh ```break``` cho phép thoát ra khỏi vòng lặp
+
+Vi dụ:    
+```C++
+for(int i = 0; i< 10; i++)
+{   
+    cout << "di lam";
+    continue;
+    cout << "di vong vong";
+}
+```
+
+Chỉ có tác dụng với for()
+```C++
+//VD bỏ qua việc đi làm thêm vào ngày chẵn
+for(int i = 0; i <=10; i++)
+{
+    if(i%2==0)
+    {
+        continue;
+    }
+    cout << "di lam them\n";
+}
+```
+
+VD lệnh break, khi không có điều kiện duy trì
+
+```c++
+for(int i = 2;; i++)
+{
+    if(i == 7)
+    {
+        break;
+    }
+    cout << "Di lam cham chi vao thu " << i << '\n';
+}
+```
+
 </details>
 
 
