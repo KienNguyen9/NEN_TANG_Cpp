@@ -169,11 +169,13 @@ for(int i = 2;; i++)
 
 <details>
     <summary>
-        <h3>Vòng lặp lồng nhau - Nested for Loop</h3>
+        <h3>Vòng lặp lồng nhau - Nested for Loop :dollar:</h3>
     </summary>
 
 <h4>Nội dung chính:</h4>
--
+
+- Vòng lặp lồng nhau là bên trong một vòng lặp có một vòng lặp khác
+- ```continue``` và ```break``` chỉ tác động vào vòng lặp gần nhất chứa nó.
 
 ```C++
 #include<iostrem>
@@ -190,6 +192,30 @@ int main()
     }
     return 0;
 }
+```
+
+Bài tập vẽ hình dùng vòng lặp nested loop
+```C++
+// Vẽ hình vuông
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout >> "Nhap do dai canh hinh vuong: ";
+    cin >> n;
+
+    for(int j = 0; j < 4; j++)
+    {  
+        for(int i = 0; i < 4; i++);
+        {
+            cout << "* ";
+        }
+        cout << '\n';
+    }   
+    return 0;
+}
+
 ```
 </details>
 
