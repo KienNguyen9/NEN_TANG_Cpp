@@ -169,7 +169,27 @@ for(int i = 2;; i++)
 
 <details>
     <summary>
-        <h3>Vòng lặp for - for loop statements</h3>
+        <h3>Vòng lặp lồng nhau - Nested for Loop</h3>
     </summary>
+
+<h4>Nội dung chính:</h4>
+-
+
+```C++
+#include<iostrem>
+using namespace std;
+int main()
+{
+    for(int i = 0; i < 10; i++)
+    {
+        cout << "Tuan thu " << i;
+        for(int j = 1; j < 8; j++)
+        {
+            cout << "Di lam ngay thu: " << j;
+        }
+    }
+    return 0;
+}
+```
 </details>
 
