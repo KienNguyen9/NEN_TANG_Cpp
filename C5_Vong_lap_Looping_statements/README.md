@@ -117,7 +117,7 @@ Là các lệnh sẽ được thực hiện ít nhất một lần.
 
 <details>
     <summary>
-        <h3>Cotinue và break</h3>
+        <h3>Câu lệnh cotinue và break - Continue and break statement</h3>
     </summary>
     <h4>Hai phép lệnh continue và break điều khiển vòng lặp như thế nào: </h4>
 
