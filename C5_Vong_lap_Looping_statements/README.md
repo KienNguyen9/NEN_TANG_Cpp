@@ -99,6 +99,14 @@ while(i < 100)
 ``` 
 
 Tương tự như while() thì do{}while() là giống nhau mọi thứ chỉ trừ ở 1 điểm
+
+```C++
+do
+{
+    // các câu lệnh
+}while(dieu_kien_dung)
+
+```
 Là các lệnh sẽ được thực hiện ít nhất một lần.
 
 </details>
