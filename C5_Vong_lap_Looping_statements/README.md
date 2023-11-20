@@ -205,9 +205,9 @@ int main()
     cout >> "Nhap do dai canh hinh vuong: ";
     cin >> n;
 
-    for(int j = 0; j < 4; j++)
+    for(int i = 0; i < 4; i++)
     {  
-        for(int i = 0; i < 4; i++);
+        for(int j = 0; j < 4; j++);
         {
             cout << "* ";
         }
