@@ -76,6 +76,7 @@ int main()
 
 <h4>Vòng lặp while là: </h4>
 
+- Dùng khi KHÔNG BIẾT TRƯỚC số lần lặp
 - Về bản chất cũng là vòng lặp giống như for, và có thể thay thế cho nhau. Nhưng 2 cách này đều có ưu nhược điểm riêng
 
 Cú pháp:
