@@ -71,8 +71,35 @@ int main()
 
 <details>
     <summary>
-        <h3>Vòng lặp for - for loop statements</h3>
+        <h3>Vòng lặp while - while loop statements</h3>
     </summary>
+
+<h4>Vòng lặp while là: </h4>
+
+- Về bản chất cũng là vòng lặp giống như for, và có thể thay thế cho nhau. Nhưng 2 cách này đều có ưu nhược điểm riêng
+
+Cú pháp:
+```C++
+/*
+    (Khai báo biến đếm bên ngoài)
+    int i = 0;
+    while(1 điều kiện)
+    {
+        (các câu lệnh)
+        (lệnh tăng hoặc giảm)
+    }
+*/
+int i = 0;
+while(i < 100)
+{
+    cout << "Nguyen Trung Kien\n";
+    i++
+}
+``` 
+
+Tương tự như while() thì do{}while() là giống nhau mọi thứ chỉ trừ ở 1 điểm
+Là các lệnh sẽ được thực hiện ít nhất một lần.
+
 </details>
 
 
