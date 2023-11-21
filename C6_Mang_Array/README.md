@@ -48,7 +48,7 @@ int main()
 
 <details>
     <summary>
-        <h3>6.2 </h3>
+        <h3>6.2 Thao tác với mảng </h3>
     </summary>
 </details>
 
@@ -57,7 +57,7 @@ int main()
 
 <details>
     <summary>
-        <h3>6.1 Mảng là gì? </h3>
+        <h3>6.1 Mảng đa chiều</h3>
     </summary>
 </details>
 
