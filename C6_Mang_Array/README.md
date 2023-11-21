@@ -17,11 +17,14 @@
 - vì kiểu dự liệu khai báo là int 4 bytes nên khi cộng 1 đơn vị của địa chỉ mảng tức là cộng thêm 4 byte giá trị địa chỉ ```arr + 1``` sẽ là địa chỉ của phần tử thứ arr[1] của mảng arr.
 
 Cú pháp: (Kiểu dư liệu) (Tên biến)[(số phần tử)] = {1,2,3};  
+
 ```C++
 int arrayX[3] = {1,2,3};
+string x[] = {"Hello", "world", "I'm Kien"};
 ```
 
-Chương trình ví dụ: Duyệt mảng dùng vòng lặp
+Chương trình ví dụ: Duyệt mảng dùng vòng lặp:
+
 ```C++
 #include <iostream>
 using namespace std;
