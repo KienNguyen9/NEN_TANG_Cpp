@@ -1,7 +1,7 @@
 <h1>Chương 5. Vòng lặp - Looping statments :dollar:</h1>
 <details>
     <summary>
-        <h3>Vòng lặp for - for loop statements</h3>
+        <h3>5.1 Vòng lặp for - for loop statements</h3>
     </summary>
 
 CHÚ Ý: Vòng lặp là phần quan trọng cần nắm thật chắc
