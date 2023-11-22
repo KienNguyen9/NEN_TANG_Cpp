@@ -13,16 +13,33 @@
  * 
  */
 #include <iostream>
+#define ll long long
 using namespace std;
+
+ll gcd(ll a, ll b){
+    if(a==0||b==0) return a+b; 
+    while(a!=b)
+    {   
+        if(a>b) 
+            a = a - b;
+        else 
+            b = b - a;
+    } 
+    return a;
+}
+
+ll gcm(ll a, ll b)
+{
+    return a*b/gcd(a,b);
+}
 
 int main()
 {
     // Bỏ qua bước nhập bằng lệnh, nhập tay 
     int a = 12, b = 30;
     int ucln = 0, bcnn = 0;
-    
-    //
 
+            
     // Tìm ước chung lớn nhất
     for(int i = 1; i <= (a<b?a:b); i++)
     {
@@ -40,8 +57,12 @@ int main()
             break; 
         }
     }
+    cout << "\nUCLN la: " << ucln;
+    cout << "\nBCNN la: " << bcnn;
 
-    cout << "\n UCLN la: " << ucln;
-    cout << "\n BCNN la: " << bcnn;
+    cout << "\nCách đúng để tìm UCLN";
+    cout << "\nUCLN = " << gcd(a,b); 
+    cout << "\nCách đúng để tìm BCNN";
+    cout << "\nUCLN = " << gcm(a,b); 
     return 0;
 }
