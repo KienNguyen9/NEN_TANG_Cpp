@@ -185,5 +185,64 @@ int main()
     <summary>
         <h3>6.1 Mảng đa chiều</h3>
     </summary>
+<h4>Nội dung chính:</h4>
+
+- Hiểu đơn giản là mảng lồng vào mảng (giống như for lồng for)
+- Trong thực tế rất ít khi gặp mảng 2 chiều khi làm việc
+- Thường gặp mảng 2 chiều nhất là mảng kí tự, đó là mảng 1 chiều ```string``` cũng có thể hiểu là mảng 2 chiều ```char``` 
+
+<h4>Cú pháp:</h4>
+
+```C++
+// Thêm 1 cặp ngoặc vuông vào mảng 1 chiều ta có mảng 2 chiều
+// Suy luận như trong for lồng for
+// tức là arr[3] có 3 phần tử, mỗi phần từ có 2 phần tử bên trong
+int arr[3][2] = {{1, 2}, {3, 4}, {5, 6}};
+
+string ten[3] = 
+{
+    "Kevin Nguyen",
+    "Trung Kien",
+    "Jenny Wu"
+}
+```
+<h4>Duyệt mảng 2 chiều:</h4>
+
+- Dùng 2 vòng lặp for
+
+```C++
+int arr[3][2] = {{1, 2}, {3, 4}, {5, 6}};
+
+for(int i = 0; i < 3; i++)
+{
+    for(int j = 0 ; j< 2; j++)
+    {
+        cout << arr[i][j];
+    }
+    cout << '\n';    
+}
+
+//Duyệt mảng string
+string ten[3] =  // char ten[5][12] đây là bản chất
+{
+    "Kevin Nguyen",
+    "Trung Kien",
+    "Jenny Wu"
+};
+
+for(int i = 0; i < 3; i++) // 3 tên
+{
+    for(int j = 0 ; j < ten[i].length(); j++) // số kí tự phần tử thứ i của mảng string
+    {
+        cout << ten[i][j] << ' ';
+    }
+    cout << '\n';    
+}
+
+
+
+
+``` 
+
 </details>
 
