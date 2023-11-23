@@ -199,6 +199,7 @@ int main()
 // tức là arr[3] có 3 phần tử, mỗi phần từ có 2 phần tử bên trong
 int arr[3][2] = {{1, 2}, {3, 4}, {5, 6}};
 
+// Mảng 2 chiều kiểu string 
 string ten[3] = 
 {
     "Kevin Nguyen",
@@ -223,6 +224,7 @@ for(int i = 0; i < 3; i++)
 }
 
 //Duyệt mảng string
+
 string ten[3] =  // char ten[5][12] đây là bản chất
 {
     "Kevin Nguyen",
