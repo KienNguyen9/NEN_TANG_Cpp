@@ -79,7 +79,7 @@ Về căn bản nó là thuật toán, để máy tính làm việc:
 Để làm quen với sắp xếp mảng ta bắt đầu với việc sắp xếp từ lớn đến bé hoặc ngược lại.
 
 ```C++
-##include<iostream>
+#include<iostream>
 using namespace std;
 
 int main()
