@@ -183,7 +183,7 @@ int main()
 
 <details>
     <summary>
-        <h3>6.1 Mảng đa chiều</h3>
+        <h3>6.3 Mảng đa chiều</h3>
     </summary>
 <h4>Nội dung chính:</h4>
 
