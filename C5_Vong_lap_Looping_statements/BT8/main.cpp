@@ -15,6 +15,7 @@
  * 
  */
 #include<iostream>
+#include "math.h" 
 using namespace std;
 int main()
 {
@@ -61,7 +62,25 @@ int main()
         sum += n1%10;
         n1 /= 10;
     }
-    cout << "Kq 3: " << sum;
+    cout << "\nKq 3: " << sum;
+
+    //Task 4:
+    int take;
+    cout << "\nNhap so ban muon lay: ";
+    cin >> take;
+
+    if(take > ((int)log10(n) + 1))
+    {
+        cout << "Nhap sai vi tri.";
+        return 0;
+    }
+    else
+    {
+        int temp = (log10(n)+1) - take;
+        cout << (n % (int)pow(10, (temp+1))) / (int)pow(10,temp);
+    }
+
+    
 
     return 0;
 }
