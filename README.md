@@ -1087,7 +1087,132 @@ int main()
     <summary>
         <h3>6.2 Thao tác với mảng </h3>
    </summary>
+<h4> Khi làm việc với mảng ta thường làm 2 việc chính sau:</h4>
+
+- Duyệt mảng: có thể dùng vòng lặp thường(for và while) hoặc Dùng cấu trúc for dành riêng cho duyệt mảng.
+- Sắp xếp mảng 
+
+<h4> 1. Duyệt mảng bằng:</h4>
+For-each (chỉ dùng để in ra các phần tử của mảng chứ không nên dùng nếu muốn làm việc chi tiết hơn)
+
+Ví dụ: Cách dùng for để duyệt cho tất cả các loại cấu trúc dữ liệu. ở đây là duyệt mảng
+
+Cú pháp:
+```C++
+int arr[] = {1,5,9,3,5,7};
+// Đây là for-each: chuyên dùng duyệt các kiểu cấu trúc
+// Dùng để in ra tất cả phần tử của mảng
+for(int x : arr) 
+{
+    cout << x << ' ';
+}
+```
+
+<h4>2. Sắp xếp:</h4> 
+Về căn bản nó là thuật toán, để máy tính làm việc:
+Để làm quen với sắp xếp mảng ta bắt đầu với việc sắp xếp từ lớn đến bé hoặc ngược lại.
+
+```C++
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int arr[] = {1,3,5,0};
+    
+
+    for(int i = 0; i< 3; i++)
+    {
+        for(int j = i+1; j < 3; j++) // tìm số lớn nhất đưa nó vào vị trí đầu tiên 
+        {
+            if(arr[i] < arr[j]) // so sánh số được chọn với các số phía sau và đổi vị trí nếu nó là số lớn hơn
+            {
+                // Đây là biến tạm, để tạm lưu giá trị khi đổi chỗ
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+    // Cách duyệt nhanh mảng đã học ở phần trước
+    for(int x: arr)
+    {
+        cout << x << " ";
+    }
+
+    return 0;
+}
+```
+
+<h4>Nếu muốn nhập 1 mảng có n phần tử biết trước số lượng: </h4>
+
+Vì qui tắc của mảng là: số lượng phần tử là một số cố định hoặc không cần điền số lượng
+Nếu muốn khai báo số lượng bằng 1 biến thì nó phải là hằng số.
+
+```C++
+conts int N = 100;
+int arr[N] = {};
+```
+<h4>Nếu muốn nhập 1 mảng có n phần tử KHÔNG biết trước số lượng: </h4>
+
+Thì vẫn theo qui tắc trên nhưng linh động 
+đặt một hằng số là ```MAX``` thật to.
+Lúc này các giá trị vô định của mảng sẽ bằng 0
+ví dụ:
+
+```C++
+conts int N = 1000;
+int arr[N] = {};
+```
+
+<h4>Tổng kết, chương trình ví dụ cho tất cả các kiến thức trên: </h4>
+
+```C++
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    //Hằng số qui định số lượng phần từ khi ko biết rõ là có bao nhiêu phần từ
+    // Nhập 1 số mà chắc chắc sẽ lớn hơn số phần từ
+    const int MAX = 1000;
+    // Mảng với số lượng phần từ là một hằng số
+    int arr[MAX] = {1, 3, 5, 0, 9, 65};
+    // Số lượng phần tử sẽ làm việc
+    // nếu nhập thêm chỉ cần: n++
+    int n = 6;
+    //Thuật toán sắp xếp mảng 
+    for(int i = 0; i < n; i++)
+    {
+        for(int j = i+1 ; j < n; j++) // tìm số lớn nhất đưa nó vào vị trí đầu tiên 
+        {
+            if(arr[i] < arr[j]) // so sánh số được chọn với các số phía sau và đổi vị trí nếu nó là số lớn hơn
+            {
+                // Đây là biến tạm, để tạm lưu giá trị khi đổi chỗ
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+    
+    // Nhược điểm của for each là chỉ có thể duyệt hết all phần từ
+    // for(int x: arr)
+    // {
+    //     cout << x << " ";
+    // }
+
+    //Duyệt mảng thủ công
+    for(int i = 0; i<n; i++)
+    {
+        cout << arr[i] << ' ';
+    } 
+
+    return 0;
+}
+```
 </details>
+
 
 
 
@@ -1096,6 +1221,63 @@ int main()
     <summary>
         <h3>6.3 Mảng đa chiều </h3>
    </summary>
+<h4>Nội dung chính:</h4>
+
+- Hiểu đơn giản là mảng lồng vào mảng (giống như for lồng for)
+- Trong thực tế rất ít khi gặp mảng 2 chiều khi làm việc
+- Thường gặp mảng 2 chiều nhất là mảng kí tự, đó là mảng 1 chiều ```string``` cũng có thể hiểu là mảng 2 chiều ```char``` 
+
+<h4>Cú pháp:</h4>
+
+```C++
+// Thêm 1 cặp ngoặc vuông vào mảng 1 chiều ta có mảng 2 chiều
+// Suy luận như trong for lồng for
+// tức là arr[3] có 3 phần tử, mỗi phần từ có 2 phần tử bên trong
+int arr[3][2] = {{1, 2}, {3, 4}, {5, 6}};
+
+// Mảng 2 chiều kiểu string 
+string ten[3] = 
+{
+    "Kevin Nguyen",
+    "Trung Kien",
+    "Jenny Wu"
+}
+```
+<h4>Duyệt mảng 2 chiều:</h4>
+
+- Dùng 2 vòng lặp for
+
+```C++
+int arr[3][2] = {{1, 2}, {3, 4}, {5, 6}};
+
+for(int i = 0; i < 3; i++)
+{
+    for(int j = 0 ; j< 2; j++)
+    {
+        cout << arr[i][j];
+    }
+    cout << '\n';    
+}
+
+//Duyệt mảng string
+
+string ten[3] =  // char ten[5][12] đây là bản chất
+{
+    "Kevin Nguyen",
+    "Trung Kien",
+    "Jenny Wu"
+};
+
+for(int i = 0; i < 3; i++) // 3 tên
+{
+    for(int j = 0 ; j < ten[i].length(); j++) // số kí tự phần tử thứ i của mảng string
+    {
+        cout << ten[i][j] << ' ';
+    }
+    cout << '\n';    
+}
+``` 
+
 </details>
 
 
