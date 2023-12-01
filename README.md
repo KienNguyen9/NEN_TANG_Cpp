@@ -805,6 +805,11 @@ int main()
 </details>
 
 
+
+
+
+
+
 <h2> ▶5. Cấu trúc vòng lặp - Loop statements </h2>
 
 <details>
@@ -1022,7 +1027,51 @@ int main()
     return 0;
 }
 
-```
-   
+```   
 </details>
+
+
+
+
+
+<h2> ▶6. Mảng - Array </h2>
+
+<details>
+    <summary>
+        <h3>6.1 Khái niệm cơ bản </h3>
+   </summary>
+</details>
+
+
+
+
+<details>
+    <summary>
+        <h3>6.2 Thao tác với mảng </h3>
+   </summary>
+</details>
+
+
+
+
+<details>
+    <summary>
+        <h3>6.3 Mảng đa chiều </h3>
+   </summary>
+</details>
+
+
+
+
+
+
+<h2> ▶7. Kiểu dữ liệu chuỗi - string datatype </h2>
+
+<details>
+    <summary>
+        <h3>7.1 Khái niệm cơ bản </h3>
+   </summary>
+</details>
+</details>
+
 
