@@ -1291,7 +1291,43 @@ for(int i = 0; i < 3; i++) // 3 tên
     <summary>
         <h3>7.1 Khái niệm cơ bản </h3>
    </summary>
+
+<h4>Nội dung chính:</h4>
+
+- Bản chất của string là mảng kí tự ```char arr[]```  nhưng có những ```tính năng mới```.
+- Tính năng cộng 2 chuỗi tạo ra một chuỗi là kết nối của 2 chuỗi ban đầu(khác với kiểu mảng kí tự là sẽ cộng mã ASCII của các phần tử).
+- Tính năng xuất nhanh số lượng phần tử bằng phương thức ```.length()```(không dùng hàm ```sizeof```).
+- Tính năng trích chuỗi kí tự từ 1 chuỗi đã có bằng phương thức ```substr(a,b)``` (lấy từ kí tự thứ a, về sau b phần tử).
+- Làm việc với chuỗi cũng như làm việc với mảng kí tự. Tức là ```Thao tác với các kí tự trong chuỗi```
+
+```C++
+char c = 'K';
+//Cách 1: RẤT cũ của lập trình C
+char name[10] = {'K','i','e','n'};
+//Cách 2: cũ của lập trình C
+char name[10] = "Kien";
+
+// Cách 3: cách mới trong LT C++
+string name = "Trung Kien";
+```
+
+Đây là tính năng mà ```string``` mới có, ```array``` ko có.
+```C++
+//Nối chuỗi(cộng chuỗi)
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+    string firstName = "Kien";
+    string lastName = "Nguyen";
+    string fullName = firstName + ' ' + lastName;
+    cout << fullName;
+    return 0;
+}
+```
 </details>
-</details>
+
+
 
 
