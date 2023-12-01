@@ -1296,7 +1296,7 @@ for(int i = 0; i < 3; i++) // 3 tên
 
 - Bản chất của string là mảng kí tự ```char arr[]```  nhưng có những ```tính năng mới```.
 - Tính năng cộng 2 chuỗi tạo ra một chuỗi là kết nối của 2 chuỗi ban đầu(khác với kiểu mảng kí tự là sẽ cộng mã ASCII của các phần tử).
-- Tính năng xuất nhanh số lượng phần tử bằng phương thức ```.length()```(không dùng hàm ```sizeof```).
+- Tính năng xuất nhanh số lượng phần tử bằng phương thức ```.length()```(không dùng hàm ```sizeof()```).
 - Tính năng trích chuỗi kí tự từ 1 chuỗi đã có bằng phương thức ```substr(a,b)``` (lấy từ kí tự thứ a, về sau b phần tử).
 - Làm việc với chuỗi cũng như làm việc với mảng kí tự. Tức là ```Thao tác với các kí tự trong chuỗi```
 
