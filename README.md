@@ -1037,7 +1037,7 @@ int main()
 - Mảng dùng để lưu nhiều giá trị có cùng kiểu dữ liệu
 - Số thứ tự của mảng tình thì vị trí thứ 0 (Index 0)
 - Để duyệt một mảng thì phải dùng vòng lặp
-- Lưu ý: ```arr[0]``` là giá trị phần tử thứ 1
+- Lưu ý: ```arr[0]``` là giá trị phần tử thứ 1,
           ```arr``` là địa chỉ phần tử thú 1, ```arr+1``` là địa chỉ phần tử thứ 2
 
 
