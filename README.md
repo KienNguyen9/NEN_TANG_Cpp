@@ -1,6 +1,4 @@
 # Nền tảng lập trình - Ngôn ngữ C++
-![Alt text](image.png)
-
 ## ▶ Chương 1. Chương trình đầu tiên.
 
 <details>
@@ -1032,8 +1030,54 @@ int main()
 
 <details>
     <summary>
-        <h3>6.1 Khái niệm cơ bản </h3>
+        <h3>6.1 Khái niệm cơ bản về mảng</h3>
    </summary>
+<h4>Nội dung chính: </h4>
+
+- Mảng dùng để lưu nhiều giá trị có cùng kiểu dữ liệu
+- Số thứ tự của mảng tình thì vị trí thứ 0 (Index 0)
+- Để duyệt một mảng thì phải dùng vòng lặp
+- Lưu ý: ```arr[0]``` là giá trị phần tử thứ 1
+          ```arr``` là địa chỉ phần tử thú 1, ```arr+1``` là địa chỉ phần tử thứ 2
+
+
+
+Cú pháp: (Kiểu dư liệu) (Tên biến)[(số phần tử)] = {1,2,3};  
+
+```C++
+int arrayX[3] = {1,2,3};
+string x[] = {"Hello", "world", "I'm Kien"};
+```
+
+Lưu ý khi dùng biến kiểu mảng: 
+```c++
+int arr[] = {1,,5,9};
+// Ta có thể thao tác với mảng này khi gọi lệnh sau, ví dụ:
+arr[0] = 100;  // gán phần tử thứ 0 giá trị 100
+
+// Hiểu đơn giản là cộng một đơn vị là đến địa chỉ tiếp theo
+cout << arr; // in ra giá trị địa chỉ của phần tử đầu tiên index 0
+cout << arr+1; // in ra giá trị địa chỉ của phần thử tiếp theo index 1
+```
+
+Chương trình ví dụ: Duyệt mảng dùng vòng lặp:
+
+```C++
+#include <iostream>
+using namespace std;
+int main()
+{
+    int arr[] = {1,3,5,7,9,4};
+    int sum = 0;
+    for(int i = 0; i < 6; i++ )
+    {
+        sum += arr[i];
+    }
+    cout << "Tong cua mang la: " << sum;
+    return 0;
+}
+```
+
 </details>
 
 
