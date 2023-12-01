@@ -1,12 +1,6 @@
 # Nền tảng lập trình - Ngôn ngữ C++
 ![Alt text](image.png)
 
-# Lời mở đầu - tham gia vào.. 
-
-    - Xây dựng kiến thức căn bản về lập trình qua C++
-    - Dùng telegram để liên hệ với mình
-    - SĐT của mình:
-
 ## ▶ Chương 1. Chương trình đầu tiên.
 
 <details>
