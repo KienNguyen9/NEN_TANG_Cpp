@@ -8,12 +8,12 @@
 - Cài đặt Visual Studio (bản đầy đủ hơn so với VScode).
 - Chọn tích vào mục: "Desktop development with C++". Cài luôn cả môi trường C++. Tiếp tục và Install.
 
-    ### Cách tạo project mới.
+    ### Cách tạo project mới.  
 
     - Create new project
     - Empty project
     - Project name - Location - Solution 
-    - Thêm chương trình vào phần Source file
+    - Thêm chương trình vào phần Source file   
     - Viết code 
     - Debuger 
     - Tạo thêm project trong Solution để làm việc
