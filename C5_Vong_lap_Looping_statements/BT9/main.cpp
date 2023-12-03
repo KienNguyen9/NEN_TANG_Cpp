@@ -17,7 +17,7 @@
 #include <string>
 using namespace std;
 int main(){
-    // Câu 1: chia theo hàng      
+    // Câu 1: in theo hàng      
     for(int i =1 ; i <= 10; i++){        
         for(int j = 1;j <= 10; j++){
             string s = to_string(i) + 'x' + to_string(j) + '=' + to_string(i*j);
@@ -25,6 +25,16 @@ int main(){
         }
         cout << endl;
     }
-    
+    cout << endl;
+    cout << endl;
+
+    //Câu 2: in theo cột
+    for(int i =1 ; i <= 10; i++){               
+        for(int j = 1;j <= 10; j++){   
+            string s = to_string(j) + 'x' + to_string(i) + '=' + to_string(i*j);
+            cout << setw(10) << left << s;          
+        }
+        cout << endl;
+    }
     return 0;
 }
