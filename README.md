@@ -3,14 +3,14 @@
 
 <details>
 <summary>
-<h3>1.1 Cài đặt môi trường C++ với Visual Studio.</h3>
+<h3>1.1 Cài đặt môi trường C++ với Visual Studio.</h3>  
 </summary>
 - Cài đặt Visual Studio (bản đầy đủ hơn so với VScode).
 - Chọn tích vào mục: "Desktop development with C++". Cài luôn cả môi trường C++. Tiếp tục và Install.
 
-    ### Cách tạo project mới.  
+    ### Cách tạo project mới.     
 
-    - Create new project
+    - Create new project   
     - Empty project
     - Project name - Location - Solution 
     - Thêm chương trình vào phần Source file   
@@ -22,9 +22,9 @@
 <details>
 <summary>
 <h3>1.2 Code C++ ngay trên trình duyệt với OnlineGDB.com</h3>
-</summary>
+</summary> 
 
-- Nếu máy của bạn cấu hình yếu và không thể chạy Visual Studio hoặc VScode 
+- Nếu máy của bạn cấu hình yếu và không thể chạy Visual Studio hoặc VScode
 - Bạn có thể code trên trình duyệt web: OnlineGDb.com
 - Với giao diện vừa đủ dùng
 - Có thể lưu lại, qua tài khoản.

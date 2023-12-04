@@ -11,11 +11,23 @@
  * 
  */
 #include <iostream>
+#include <string>
+
 using namespace std;
+
 int main()
 {
-char *p = "Codeky";
-p[0] = 'c';
-cout << p << '\n' << p[0];
-return 0;
+    // Các biến cần KHAI BÁO 
+    int age = 25;
+    string fullName = "Kevin Nguyen";
+    string country = "Vietnam";
+    float weight = 55.5;
+    
+    // Xuất dư liệu ra màn hình
+    cout << "\nXin chao! Toi ten la: " << fullName << '.';
+    cout << "\nToi den tu " << country << '.';
+    cout << "\nNam nay toi " << age << " tuoi.";
+    cout << "\nToi nang " << weight << " Kg.\n\n";
+
+    return 0;
 }
