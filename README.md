@@ -13,7 +13,7 @@
     - Create new project   
     - Empty project
     - Project name - Location - Solution 
-    - Thêm chương trình vào phần Source file   
+    - Thêm chương trình vào phần Source file           
     - Viết code 
     - Debuger 
     - Tạo thêm project trong Solution để làm việc
