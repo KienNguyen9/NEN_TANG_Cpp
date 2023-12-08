@@ -41,5 +41,30 @@ int main()
         cout << '\n';
        
     }
+
+    // Task 2: Vẽ hình vuông nhị phân ruột 0 viền 1
+    for(int i = 0; i<=n; i++)
+    {
+        for(int j = 0; j<=n; j++)
+        {
+            if( i == 0 || i == n)
+            {
+                cout << "1" << ' ';
+                continue;
+            }
+            else
+            {
+                if(j == 0 || j == n)
+                {
+                    cout << '1' << ' ';
+                }
+                else
+                {
+                    cout << '0' << ' ';
+                }
+            }
+        }
+        cout << endl;
+    }
     return 0;
 }
