@@ -1,11 +1,18 @@
 # Kiểu dữ liệu tự định nghĩa - struct 
 
-<h3>Nội dung chính:</h3>
+<h3>Nội dung chính cơ bản về struct:</h3>
 
 - Định nghĩa: `struct` là một kiểu dữ liệu phức hợp được sử dụng để nhóm các biến có liên quan với nhau. Mỗi biến trong struct được gọi là thành viên của `struct`.
 - Trong struct có thể có tất cả các kiểu dữ liệu như: int, float, array và thậm chí là một struct khác
 - Chỉ cần nhớ là để truy cập thì thêm tên biến trước dấu `.`
 - Cách truy cập đơn giản, chỉ cần linh động theo kiểu dự liệu có trong `struct`. Xem ví dụ bên dưới
+
+<h3>Lưu ý:</h3>
+
+- Khi nào thì nên nhóm dữ liệu vào trong `struct` ?
+- Việc nhóm này là không bắt buộc, nhưng khi làm việc sẽ gặp các kiểu dữ liệu có liên quan với nhau 
+- Nhóm vào struct để dữ liệu của chúng ta gọn hơn và dễ quản lí
+- Nó là tiền đề của lập trình hướng đối tượng `OOP` Object-oriented programming 
 
 ```C++
 #include<iostream>
