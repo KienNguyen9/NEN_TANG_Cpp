@@ -60,9 +60,5 @@ int main()
     Person List_nguoi[100];
     //Truy cập như sau
     List_nguoi[0].hoVaTen = "Nguyen Trung Kien";
-
-
-
-
     return 0;
 }
