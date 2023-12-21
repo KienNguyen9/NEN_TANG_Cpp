@@ -29,8 +29,33 @@ struct Person
     // struct trong struct 
     DiaChi diaChi;
 
+    // Default constructor
+    Person()
+    {
+        //...
+    }
+    // Constructor - viết tường minh để thêm tham số 
+    Person(string ho_va_ten, int t, float chieu_cao)
+    {
+        hoVaTen = ho_va_ten;
+        tuoi = t;
+        chieuCao = chieu_cao;
+    }
+
+    // Đây là hàm thành viên - member function
+    void lamViec2() // Gọi trực tiếp biến thành viên mà không cần kí tự '.'
+    {
+        cout << hoVaTen << " dang lam viec.\n";
+    }
 
 };
+
+// Viết một hàm truyền tham số là 1 struct như sau:
+void lamViec(Person p)
+{
+    cout << p.hoVaTen << " dang lam viec.\n";
+}
+
 
 int main()
 {
@@ -55,10 +80,13 @@ int main()
     nguoi.diaChi.tenDuong = "Mau Than";
     nguoi.diaChi.soNha = 165;
     //Xuất ra màn hình
-    std::cout << nguoi.hoVaTen << " hien nay " << nguoi.tuoi << " tuoi\nSong tai: "<< nguoi.diaChi.thanhPho;
+    std::cout << nguoi.hoVaTen << " hien nay " << nguoi.tuoi << " tuoi\nSong tai: "<< nguoi.diaChi.thanhPho << endl;
     //tạo array có kiểu dữ liệu struct 
     Person List_nguoi[100];
     //Truy cập như sau
     List_nguoi[0].hoVaTen = "Nguyen Trung Kien";
+
+    lamViec(nguoi);
+    nguoi.lamViec2();
     return 0;
 }

@@ -1,4 +1,4 @@
-# Kiểu dữ liệu tự định nghĩa - struct 
+# Phần 1: Kiểu dữ liệu tự định nghĩa - struct 
 
 <h3>Nội dung chính cơ bản về struct:</h3>
 
@@ -70,3 +70,13 @@ int main()
     return 0;
 }
 ```
+
+# Phần 2: Hàm trong struct
+
+<h3>Nội dung chính:</h3> 
+
+- Trong bài trước ta đã nghiên cứu về biến thành viên của struct
+- Trong bài này ta sẽ nghiên cứu về hàm trong struct `member-function`
+- Khi một hàm là hàm thành viên của struct, thì sẽ được phép truy cập trực tiếp tới các biến thành viên đó (không cần truyền tham số) 
+- Từ đó có thể suy ra, các hàm và các biến nào có liên quan chặt chẽ với nhau thì ta có thể đưa vào 1 `struct` để dễ dàng quản lí
+- Các tính chất của `constructor`: tự chạy hàm khi có một đối tượng được khởi tạo, có thể dùng `default-constructor` hoặc `overloading` để có thêm gán các giá trị cho biến thành viên nhanh hơn trong khi khởi tại biến kiểu `struct` 
