@@ -11,13 +11,15 @@
 #include <iostream>
 #include <string>
 
+
+
 int main()
 {
     int x = 10;
     int y = 5;
-
     // Xuất ra màn hình địa chỉ của biến x
-    std::cout << &x;
+    std::cout << x << '\n';
+    std::cout << y << '\n';
 
     return 0;
 }
