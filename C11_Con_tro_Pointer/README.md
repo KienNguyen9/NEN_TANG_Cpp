@@ -101,7 +101,7 @@ int &r = a;
 - Khi luồng cửa chương trình gọi đến hàm con, thì đầu tiên hàm con sẽ khởi tạo các biến cần có (tức là bao gồm cả tham số được truyền sẽ được khởi tạo mới). Khi kết thúc hàm con nó sẽ bị thu hồi, không ảnh hưởng gì tới tham số được truyền
 - biến `pointer` là biến lưu địa chỉ của biến khác, khi có được địa chỉ ta có thể thay đổi giá trị của biến đó 
 - biến `reference` là biến tham chiếu tới biến khác, khi 1 trong 2 thay đổi thì biến còn lại cũng thay đổi theo
-
+- Tóm lại có 2 kiểu truyền tham số để thay đổi giá trị của tham số được truyền `pass by pointer` và `pass by reference` . Còn `pass by value` thì tham số sẽ không thể bị thay đổi
 
 ```C++
 #include <iostream>
@@ -129,7 +129,7 @@ int main()
     //int *p = &a;
     
     // truyền trực tiếp không cần tạo các biến phụ như trên
-    addOne_reference(a);
+    addOne_reference(a); 
     cout << a << '\n';
     
     addOne(&a); // truyền trực tiếp tham số là &a
