@@ -16,7 +16,6 @@ void addOne(int *a)
     (*a)++;
 }
 
-
 // Hàm tham chiếu 
 void addOne_reference(int &r)
 // int &r = a 
