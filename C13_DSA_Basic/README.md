@@ -39,7 +39,8 @@ Các loại cấu trúc dữ liệu
 
 <h3>Kết luận</h3>
 
-Cấu trúc dữ liệu là các `kiểu dữ liệu khác nhau` `liên kết với nhau` `thành 1 kiểu dữ liệu`
+Cấu trúc dữ liệu là các `kiểu dữ liệu khác nhau` `liên kết với nhau` `thành 1 kiểu dữ liệu`.
+
 Cấu trúc dữ liệu là một phần quan trọng của khoa học máy tính. Việc hiểu và sử dụng các cấu trúc dữ liệu một cách hiệu quả là cần thiết cho bất kỳ lập trình viên nào.
 
 
