@@ -18,16 +18,13 @@ int main()
     cout << new int(123);
     // KẾT QUẢ TRẢ VỀ LÀ: 1 địa chỉ 
 
-
     // Tức là sao? 
     // Là có thể "gán" nó cho 1 con trỏ 
     int *p = new int(123); 
     // lúc này vùng nhớ sẽ được quản lí bới con trỏ. Từ đây, các thao tác với dự liệu này sẽ thông qua con trỏ  
 
-
     // It's DYNAMIC ALLOCATION
     // Nó được gọi là CẤP PHÁT ĐỘNG
-
 
     // Quan sát VD trên ta thấy:
     // Dùng 1 biến con trỏ lưu ở STACK

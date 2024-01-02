@@ -20,24 +20,41 @@ using namespace std;
 int main()
 {
     // Variables
-    int n = 6;
+    int n = 0;
 
+    cout << "Nhap n: ";
+    cin >> n;
+
+    // 1. Hình tam giác đặc kí tự '0'
     for (int i = 0; i < n; i++)
     {
         for(int j = 0; j < n; j++)
         {
-            if((i + j) > (n/2 + 1))
+            
+            if((j<= n-i))
             {
-            cout << "0 ";
+            cout << " ";
             }
             else
             {
-                cout << "  ";
-
+                cout << " 0";
             }
         }
         cout << '\n';
     }
     
+
+    // 2. Tam giác cân đặc ruột kí tự '0', viền 1, lệch phải
+    cout << "\n Tam giác cân đặc ruột kí tự '0', viền 1, lệch phải \n";
+
+    // for(int i = 0;;)
+    // {
+    //     for(int j = 0; ;)
+    //     {
+
+    //     }
+    // }
+
+
     return 0;
 }
