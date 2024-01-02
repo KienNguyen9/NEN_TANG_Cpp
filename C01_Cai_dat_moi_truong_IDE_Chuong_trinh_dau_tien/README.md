@@ -1,10 +1,6 @@
-# Lời mở đầu - tham gia vào.. 
+# Lời mở đầu - Đây là kho lưu trữ kiến thức lập trình C++
 
-    - Xây dựng kiến thức căn bản về lập trình qua C++
-    - Dùng telegram để liên hệ với mình
-    - SĐT của mình:
-
-# :dollar: Chương 1. Chương trình đầu tiên.
+# Chương 1. Chương trình đầu tiên.
 
 ## 1.1 Cài đặt môi trường C++ với Visual Studio.
 
