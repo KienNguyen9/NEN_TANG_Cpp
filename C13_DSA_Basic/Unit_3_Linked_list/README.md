@@ -8,7 +8,7 @@ Hình ảnh minh họa
 ![Alt text](image.png)
 
 Hình ảnh mình họa, ví dụ các vùng nhớ được liên kết với nhau có thể nằm ở cả `HEAP` và `STACK`
-![Alt text](image-1.png)
+![Alt text](image-2.png)
  
 
  8'24
