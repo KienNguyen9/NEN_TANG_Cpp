@@ -11,4 +11,7 @@ Hình ảnh mình họa, ví dụ các vùng nhớ được liên kết với nh
 ![Alt text](image-2.png)
  
 
- 8'24
+Với `array` thì có tên biến là con trỏ đại diện để truy cập đến tất cả các phần tử
+Thì với `Linked list` cũng vậy
+
+18'52
